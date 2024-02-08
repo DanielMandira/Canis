@@ -1,0 +1,233 @@
+@import url("style.css");
+@import url("fonts.css");
+
+/* modal.css */
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backgroundModal);
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 30px;
+  position: relative;
+  z-index: 12;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal-content div {
+  padding-top: 30px;
+  padding-inline: 20px;
+  padding-bottom: 10px;
+}
+
+.modal-content span {
+  padding-right: 10px;
+  color: var(--dark-blue);
+  font-size: xx-large;
+}
+
+.modal-content p {
+  color: var(--darker-blue);
+}
+
+.modal-content a {
+  color: var(--dark-blue);
+  text-decoration: underline wavy var(--dark-blue) !important;
+  line-height: 2.0;
+}
+
+
+/* Estilos para o modal QRCode */
+#qrcode-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backgroundModal);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#qrcode-modal .modal-content {
+  background-color: #fff;
+  padding: 3%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 5%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#qrcode-modal .modal-content img {
+  width: 70%;
+  height: auto;
+  max-width: 650px;
+}
+
+#qrcode-modal .close {
+  position: absolute;
+  z-index: 12;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+
+}
+
+/* modal pix */
+#confirmation-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backgroundModal);
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#confirmation-modal .pix-title-span {
+  font-family: DMSansRegular;
+  font-weight: 700;
+  font-size: 24px;
+  padding-right: 10px;
+  text-decoration: underline wavy 2px var(--cardInfo);
+}
+
+#confirmation-modal p {
+  font-family: DMSansRegular;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#confirmation-modal strong {
+  font-family: DMSansRegular;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--secondaryColor);
+}
+
+/* modal image */
+
+#modal-image {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content-img {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-img,
+#download-link {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  font-size: 35px;
+  transition: 0.3s;
+}
+.modal-counter{
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  font-size: 15px;
+  color: #fff;
+}
+#download-link{
+  position: absolute;
+  top: 10px;
+  right: 67px;
+  width: 23px;
+  transition: 0.3s;
+}
+
+.close-img:hover,
+.close-img:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#download-link:hover,
+#download-link:focus {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.modal-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.modal-img {
+  width: 80%;
+  height: auto;
+  max-height: 1000px;
+  object-fit: cover;
+}
+
+.next{
+  position: absolute;
+  top:50%;
+  right:3%;
+  color: #fff;
+  font-size: clamp(0.8em, 2em, 2.5em);
+}
+
+.prev{
+  position: absolute;
+  top:50%;
+  left: 3%;
+  color: #fff;
+  font-size: clamp(0.8em, 2em, 2.5em);
+}
+.next:hover, .next:focus,
+.prev:hover, .prev:focus{
+  opacity: 75%;
+
+}
+/* Estilo para bloquear o scroll da tela original */
+.body-lock-scroll {
+  overflow: hidden;
+}

@@ -1,0 +1,546 @@
+@import url(./fonts.css);
+@import url(./style.css);
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+  .container-descricao {
+    margin-block: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .descricao-title {
+    margin-inline: 5%;
+  }
+
+  .descricao-title h1 {
+    text-align: center;
+    font-family: DMSansRegular;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  .desc-special-word {
+    color: var(--primaryColor);
+  }
+
+  .descricao-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2%;
+    margin-inline: 5%;
+  }
+
+  .descricao-img img {
+    width: 100%;
+    height: 100%;
+    min-width: 225px;
+    max-width: 525px;
+    min-height: 120px;
+    max-height: 420px;
+    border-radius: 20px;
+  }
+
+  .descricao-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 5%;
+  }
+
+  .descricao-text p {
+    font-family: DMSansRegular;
+    color: var(--secondaryFontColor);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 125%;
+    text-align: start;
+  }
+
+  .container-localiza {
+    margin: 3% 5%;
+  }
+
+  .localiza {
+    font-family: DMSansRegular;
+    color: var(--cardInfo);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 125%;
+    text-align: start;
+  }
+
+  .localiza img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .container-itens {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 3%;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid var(--primaryColor);
+    border-radius: 20px;
+    margin-block: 2%;
+    width: 100%;
+    height: 70px;
+    max-width: 310px;
+    max-height: 70px;
+    padding-inline: 3%;
+  }
+
+  .logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundFooter);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .logo-item img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .item-text p {
+    
+    padding-top: 6%;
+    font-size: 16px;
+    text-align: start;
+    font-family: DMSansRegular;
+    font-weight: 500;
+    line-height: 125%;
+  }
+
+  .container-reserva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 5%;
+    padding-block: 20%;
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0) 100%),
+      url(../img/cananeia-banner.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .reserva-title h2 {
+    font-family: DMSansRegular;
+    color: var(--fontColor);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  .container-botao-3 {
+    margin-block: 5%;
+  }
+
+  .container-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 10%;
+    margin-inline: 5%;
+  }
+
+  .galeria-title h3 {
+    font-family: DMSansRegular;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  .gallery-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .filter-button.active {
+    background-color: var(--secondaryColor);
+    color: var(--fontColor);
+    border-radius: 20px;
+    font-family: DMSansRegular;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0px;
+  }
+
+  .filter-button {
+    border: 2px solid var(--secondaryColor);
+    border-radius: 20px;
+    border-radius: 20px;
+    font-family: DMSansRegular;
+    font-size: 14px;
+    width: 100%;
+    max-width: 113px;
+    margin: 1%;
+    height: 44px;
+    font-weight: 500;
+    background-color: #ffffff00;
+  }
+
+  .gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galeria-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+  }
+  
+  .galeria-img img {
+    width: 100%;
+    margin: 1%;
+    border-radius: 10px;
+  }
+  
+  footer {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundFooter);
+  }
+
+  footer img {
+    width: 30%;
+  }
+
+  footer p {
+    margin: 10px 30px;
+    font-family: DMSansRegular;
+    font-size: 0.625em;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: center;
+    color: var(--secondaryFontColor);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* desktop */
+@media only screen and (min-width: 767px) {
+  .container-descricao{
+    display: flex;
+    flex-direction: row;
+    margin-block: 8%;
+    margin-inline: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+  .descricao-itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .descricao-title{
+    margin-bottom: 2%;
+  }
+  .descricao-title h1{
+    font-family: DMSansRegular;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  .desc-special-word{
+    color:var(--primaryColor)
+  }
+  .descricao-text{
+    margin-bottom: 2%;
+  }
+   .descricao-text p{
+    color: var(--secondaryFontColor);
+    font-family: DMSansRegular;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 125%;
+    text-align: start;
+   }
+   .container-localiza{
+     margin-bottom: 2%;
+   }
+
+   .container-localiza a{
+   font-family: DMSansRegular;
+   font-size: 24px;
+   color: var(--cardInfo);
+   font-weight: 500;
+   line-height: 125%;
+   text-align: start;
+  }
+
+  .descricao-img img{
+    height: 227px;
+  }
+
+  .container-botao{
+    margin-bottom: 2%;
+  }
+
+  .container-itens{
+    margin-block: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  .item{
+    border: 2px solid var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-block: 2%;
+    margin-inline: 1%;
+    border-radius: 20px;
+    height: 207px;
+    max-width: 207px;
+    max-height: 232px;
+    text-align: center;
+    flex: 1;
+    flex-shrink: 0;
+  }
+  .logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundFooter);
+    min-width: 60px;
+    min-height: 60px;
+    max-width: 90px;
+    max-height: 90px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .logo-item img{
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .descricao-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+  }
+  .descricao-img img{
+    margin: 2%;
+    width: 100%;
+    height: 100%;
+    min-width: 185px;
+    min-height: 232px;
+    max-height: 385px;
+    max-width: 432px;
+    border-radius: 20px;
+  }
+  .container-reserva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2%;
+    padding-block: 10%;
+    height: 290px;
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0) 100%),
+      url(../img/cananeia-banner.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .reserva-title h2 {
+    font-family: DMSansRegular;
+    color: var(--fontColor);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  .container-botao-3 {
+    margin-block: 2%;
+  }
+
+  .container-galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-block: 5%;
+    margin-inline: 5%;
+  }
+.galeria-title{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+  .galeria-title h3 {
+    font-family: DMSansRegular;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .filter-button.active {
+    background-color: var(--secondaryColor);
+    color: var(--fontColor);
+    border-radius: 20px;
+    font-family: DMSansRegular;
+    font-size: 18px;
+    font-weight: 500;
+    border: 0px;
+        transition: 400ms;
+
+  }
+
+  .filter-button {
+    border: 2px solid var(--secondaryColor);
+    border-radius: 20px;
+    border-radius: 20px;
+    font-family: DMSansRegular;
+    font-size: 18px;
+    width: 100%;
+    max-width: 113px;
+    margin: 1%;
+    height: 44px;
+    font-weight: 500;
+    background-color:transparent;
+    transition: 400ms;
+
+  }
+  .filter-button.active:hover {
+    background-color: var(--secondaryColor);
+    color: var(--fontColor);
+    border-radius: 20px;
+    font-family: DMSansRegular;
+    font-size: 18px;
+    font-weight: 500;
+    border: 0px;
+    transform: scale(98%);
+    opacity: 75%;
+    transition: 400ms;
+  }
+
+  .filter-button:hover {
+    border: 2px solid var(--secondaryColor);
+    border-radius: 20px;
+    border-radius: 20px;
+    font-family: DMSansRegular;
+    font-size: 18px;
+    width: 100%;
+    max-width: 113px;
+    margin: 1%;
+    height: 44px;
+    font-weight: 500;
+    background-color:transparent;
+    transform: scale(98%);
+    opacity: 75%;
+    transition: 400ms;
+  }
+  .gallery{
+    display: flex ;
+    position: relative ;
+    flex-direction: row  ;
+    flex-wrap: wrap ;
+    width: 100% ;
+    align-items: center ; 
+    justify-content:center ;
+
+  }
+
+  .galeria-img img, video{
+    border-radius: 20px;
+    width: 500px;
+    height: 450px;
+    padding: 1%;
+  }
+
+
+  footer {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundFooter);
+  }
+
+  footer img {
+    width: 15%;
+  }
+
+  footer p {
+    margin: 10px 30px;
+    font-family: DMSansRegular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: center;
+    color: var(--secondaryFontColor);
+  }
+}
