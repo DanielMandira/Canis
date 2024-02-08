@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/galeria.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+    <title>chácara Pé na Areia</title>
+    <!-- Favicons -->
+    <link href="assets/img/Canis/Canis.svg" rel="icon" />
+    <link href="assets/img/Canis/Canis.svg" rel="apple-touch-icon" />
+</head>
+
+<body>
+    <main>
+        <!-- Modal Image -->
+        <div id="modal-image">
+            <dv class="modal-content-img">
+                <span class="modal-counter" id="modal-counter"></span>
+                <a href="#" id="download-link" download><svg fill="#ffffff" height="64px" width="64px" version="1.1"
+                        id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#ffffff" stroke-width="0.0033">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g id="XMLID_24_">
+                                <path id="XMLID_25_"
+                                    d="M154.389,265.602c0.351,0.35,0.719,0.683,1.103,0.997c0.169,0.138,0.347,0.258,0.52,0.388 c0.218,0.164,0.432,0.333,0.659,0.484c0.212,0.142,0.432,0.265,0.649,0.395c0.202,0.121,0.4,0.248,0.608,0.359 c0.224,0.12,0.453,0.221,0.681,0.328c0.215,0.102,0.427,0.21,0.648,0.301c0.223,0.092,0.45,0.167,0.676,0.247 c0.235,0.085,0.468,0.175,0.709,0.248c0.226,0.068,0.456,0.119,0.685,0.176c0.246,0.062,0.489,0.131,0.739,0.181 c0.263,0.052,0.528,0.083,0.794,0.121c0.219,0.031,0.435,0.073,0.658,0.095c0.492,0.048,0.986,0.075,1.48,0.075 c0.494,0,0.988-0.026,1.48-0.075c0.225-0.022,0.444-0.064,0.667-0.096c0.262-0.037,0.524-0.068,0.784-0.12 c0.255-0.05,0.503-0.121,0.754-0.184c0.223-0.057,0.448-0.105,0.669-0.172c0.246-0.075,0.483-0.167,0.724-0.253 c0.221-0.08,0.444-0.152,0.662-0.242c0.225-0.093,0.44-0.202,0.659-0.306c0.225-0.106,0.452-0.206,0.672-0.324 c0.21-0.112,0.408-0.239,0.611-0.361c0.217-0.13,0.437-0.252,0.648-0.394c0.222-0.148,0.431-0.314,0.643-0.473 c0.179-0.134,0.362-0.258,0.536-0.4c0.365-0.3,0.714-0.617,1.049-0.949c0.016-0.016,0.033-0.028,0.049-0.044l70.002-69.998 c5.858-5.858,5.858-15.355,0-21.213c-5.857-5.858-15.355-5.857-21.213-0.001l-44.396,44.393V15c0-8.284-6.716-15-15-15 c-8.284,0-15,6.716-15,15v203.785l-44.392-44.391c-5.858-5.858-15.356-5.858-21.213,0c-5.858,5.858-5.858,15.355,0,21.213 L154.389,265.602z">
+                                </path>
+                                <path id="XMLID_26_"
+                                    d="M315,300H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h300c8.284,0,15-6.716,15-15S323.284,300,315,300z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg></a>
+                <span class="close-img" onclick="closeModal()">x</span>
+                <a href="#" class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <img src="" alt="Imagem" id="modal-img" class="modal-img">
+                <a href="#" class="next" onclick="changeImage(1)">&#10095;</a>
+            </dv>
+        </div>
+        <!-- Modal Image -->
+        <div id="modal-image">
+            <dv class="modal-content-img">
+                <span class="modal-counter" id="modal-counter"></span>
+                <a href="#" id="download-link" download><svg fill="#ffffff" height="64px" width="64px" version="1.1"
+                        id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330.00 330.00" xml:space="preserve" stroke="#ffffff" stroke-width="0.0033">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g id="XMLID_24_">
+                                <path id="XMLID_25_"
+                                    d="M154.389,265.602c0.351,0.35,0.719,0.683,1.103,0.997c0.169,0.138,0.347,0.258,0.52,0.388 c0.218,0.164,0.432,0.333,0.659,0.484c0.212,0.142,0.432,0.265,0.649,0.395c0.202,0.121,0.4,0.248,0.608,0.359 c0.224,0.12,0.453,0.221,0.681,0.328c0.215,0.102,0.427,0.21,0.648,0.301c0.223,0.092,0.45,0.167,0.676,0.247 c0.235,0.085,0.468,0.175,0.709,0.248c0.226,0.068,0.456,0.119,0.685,0.176c0.246,0.062,0.489,0.131,0.739,0.181 c0.263,0.052,0.528,0.083,0.794,0.121c0.219,0.031,0.435,0.073,0.658,0.095c0.492,0.048,0.986,0.075,1.48,0.075 c0.494,0,0.988-0.026,1.48-0.075c0.225-0.022,0.444-0.064,0.667-0.096c0.262-0.037,0.524-0.068,0.784-0.12 c0.255-0.05,0.503-0.121,0.754-0.184c0.223-0.057,0.448-0.105,0.669-0.172c0.246-0.075,0.483-0.167,0.724-0.253 c0.221-0.08,0.444-0.152,0.662-0.242c0.225-0.093,0.44-0.202,0.659-0.306c0.225-0.106,0.452-0.206,0.672-0.324 c0.21-0.112,0.408-0.239,0.611-0.361c0.217-0.13,0.437-0.252,0.648-0.394c0.222-0.148,0.431-0.314,0.643-0.473 c0.179-0.134,0.362-0.258,0.536-0.4c0.365-0.3,0.714-0.617,1.049-0.949c0.016-0.016,0.033-0.028,0.049-0.044l70.002-69.998 c5.858-5.858,5.858-15.355,0-21.213c-5.857-5.858-15.355-5.857-21.213-0.001l-44.396,44.393V15c0-8.284-6.716-15-15-15 c-8.284,0-15,6.716-15,15v203.785l-44.392-44.391c-5.858-5.858-15.356-5.858-21.213,0c-5.858,5.858-5.858,15.355,0,21.213 L154.389,265.602z">
+                                </path>
+                                <path id="XMLID_26_"
+                                    d="M315,300H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h300c8.284,0,15-6.716,15-15S323.284,300,315,300z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg></a>
+                <span class="close-img" onclick="closeModal()">x</span>
+                <a href="#" class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <img src="" alt="Imagem" id="modal-img" class="modal-img">
+                <a href="#" class="next" onclick="changeImage(1)">&#10095;</a>
+            </dv>
+        </div>
+        <header class="container-fluid chacara">
+            <nav id="offcanvas" class="navbar justify-content-around navbar-expand-md ">
+                <div class="container-fluid">
+                    <a class="navbar-toggler d-md-none" type="a" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <!-- Icone Botão OffCanvas -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <path
+                                d="M0.626465 15.625H13.436C13.5183 15.6251 13.5998 15.6089 13.6758 15.5774C13.7519 15.546 13.821 15.4998 13.8792 15.4417C13.9373 15.3835 13.9835 15.3144 14.0149 15.2383C14.0464 15.1623 14.0626 15.0808 14.0625 14.9985V13.1265C14.0626 13.0442 14.0464 12.9627 14.0149 12.8867C13.9835 12.8106 13.9373 12.7415 13.8792 12.6833C13.821 12.6252 13.7519 12.579 13.6758 12.5476C13.5998 12.5161 13.5183 12.4999 13.436 12.5H0.626465C0.544178 12.4999 0.462687 12.5161 0.386651 12.5476C0.310616 12.579 0.24153 12.6252 0.183344 12.6833C0.125159 12.7415 0.0790163 12.8106 0.0475562 12.8867C0.0160961 12.9627 -6.40206e-05 13.0442 1.90603e-07 13.1265V14.9985C-6.40206e-05 15.0808 0.0160961 15.1623 0.0475562 15.2383C0.0790163 15.3144 0.125159 15.3835 0.183344 15.4417C0.24153 15.4998 0.310616 15.546 0.386651 15.5774C0.462687 15.6089 0.544178 15.6251 0.626465 15.625ZM0.626465 3.125H13.436C13.5183 3.12506 13.5998 3.1089 13.6758 3.07744C13.7519 3.04598 13.821 2.99984 13.8792 2.94166C13.9373 2.88347 13.9835 2.81438 14.0149 2.73835C14.0464 2.66231 14.0626 2.58082 14.0625 2.49854V0.626465C14.0626 0.544179 14.0464 0.462687 14.0149 0.386651C13.9835 0.310616 13.9373 0.24153 13.8792 0.183344C13.821 0.125159 13.7519 0.0790162 13.6758 0.0475561C13.5998 0.0160961 13.5183 -6.40206e-05 13.436 1.90604e-07H0.626465C0.544178 -6.40206e-05 0.462687 0.0160961 0.386651 0.0475561C0.310616 0.0790162 0.24153 0.125159 0.183344 0.183344C0.125159 0.24153 0.0790163 0.310616 0.0475562 0.386651C0.0160961 0.462687 -6.40206e-05 0.544179 1.90603e-07 0.626465V2.49854C-6.40206e-05 2.58082 0.0160961 2.66231 0.0475562 2.73835C0.0790163 2.81438 0.125159 2.88347 0.183344 2.94166C0.24153 2.99984 0.310616 3.04598 0.386651 3.07744C0.462687 3.1089 0.544178 3.12506 0.626465 3.125ZM21.0938 6.25H0.78125C0.57405 6.25 0.375336 6.33231 0.228823 6.47882C0.0823102 6.62534 1.90603e-07 6.82405 1.90603e-07 7.03125V8.59375C1.90603e-07 8.80095 0.0823102 8.99966 0.228823 9.14618C0.375336 9.29269 0.57405 9.375 0.78125 9.375H21.0938C21.301 9.375 21.4997 9.29269 21.6462 9.14618C21.7927 8.99966 21.875 8.80095 21.875 8.59375V7.03125C21.875 6.82405 21.7927 6.62534 21.6462 6.47882C21.4997 6.33231 21.301 6.25 21.0938 6.25ZM21.0938 18.75H0.78125C0.57405 18.75 0.375336 18.8323 0.228823 18.9788C0.0823102 19.1253 1.90603e-07 19.324 1.90603e-07 19.5312V21.0938C1.90603e-07 21.301 0.0823102 21.4997 0.228823 21.6462C0.375336 21.7927 0.57405 21.875 0.78125 21.875H21.0938C21.301 21.875 21.4997 21.7927 21.6462 21.6462C21.7927 21.4997 21.875 21.301 21.875 21.0938V19.5312C21.875 19.324 21.7927 19.1253 21.6462 18.9788C21.4997 18.8323 21.301 18.75 21.0938 18.75Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <!-- logo Canis -->
+                    <a href="index.html">
+                        <img src="./assets/img/canis-png-deitado-transparente/4.png" width="100">
+                    </a>
+                    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <!-- Conteudo do OffCanvas -->
+                        <div class="offcanvas-header">
+                            <a type="a" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+                        </div>
+                        <div class="offcanvas-body d-md-block">
+                            <ul class="navbar-nav justify-content-center flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link custom-nav-link" aria-current="page"
+                                        href="./index.html">Início</a>
+                                </li>
+                                <hr />
+                                <li class="nav-item">
+                                    <a class="nav-link custom-nav-link" aria-current="page"
+                                        href="./index.html#conheca">Locais</a>
+                                </li>
+                                <hr />
+                                <li class="nav-item">
+                                    <a class="nav-link custom-nav-link" aria-current="page"
+                                        href="./index.html#beneficios">Benefícios</a>
+                                </li>
+                                <hr />
+                                <li class="nav-item">
+                                    <a class="nav-link custom-nav-link" aria-current="page"
+                                        href="./index.html#contatos">Contato</a>
+                                </li>
+                                <hr />
+                                <li class="nav-item d-flex justify-content-center d-md-none p-5">
+                                    <a href="https://api.whatsapp.com/send?phone=+5513981957811&text=Olá"
+                                        target="_blank" class="btn btn-reserva">Reservar Agora</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item d-flex justify-content-start d-none d-md-flex">
+                        <a href="https://api.whatsapp.com/send?phone=+5513981957811&text=Olá" target="_blank"
+                            class="btn btn-reserva">Reservar Agora</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Descrição do local -->
+        <!-- desc web -->
+        <section id="container-descricao-chacara"></section>
+        <!-- desc mobile -->
+        <section class="container-descricao d-md-none">
+            <div class="descricao-title">
+                <h1>Chácara <span class="desc-special-word">Pé na Areia</span></h1>
+            </div>
+            <div class="descricao-img">
+                <img src="./assets/img/chacara/interior-9.jpg">
+            </div>
+            <div class="descricao-text">
+                <p>Alugamos para finais de semana, temporadas e eventos.</p>
+            </div>
+            <div class="container-botao">
+                <a href="https://api.whatsapp.com/send?phone=+5513981957811&text=Olá" target="_blank"
+                    class="btn btn-reserva">Reservar Agora</a>
+            </div>
+            <div class="container-localiza">
+                <a class="localiza" href="https://www.google.com/maps?q=-25.0297881,-47.9128129" target="_blank">Ver
+                    Localização no Google
+                    Maps&nbsp;<img src="./assets/img/external-link-alt.svg"></a>
+            </div>
+            <div class="container-itens">
+                <div class="item">
+                    <div class="logo-item">
+                        <img src="./assets/img/home.svg">
+                    </div>&nbsp;&nbsp;
+                    <div class="item-text">
+                        <p>Mobiliado, com utensílios de cozinha e quarto</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="logo-item">
+                        <img src="./assets/img/praia.svg">
+                    </div>&nbsp;&nbsp;
+                    <div class="item-text">
+                        <p>Praia Particular</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="logo-item">
+                        <img src="./assets/img/wifi.svg">
+                    </div>&nbsp;&nbsp;
+                    <div class="item-text">
+                        <p>Wifi, luz e água disponíveis gratuitamente</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reserva -->
+        <section class="container-reserva">
+            <div class="reserva-title">
+                <h2>Uma experiência memorável</h2>
+            </div>
+            <div class="container-botao-3">
+                <a href="https://api.whatsapp.com/send?phone=+5513981957811&text=Olá" target="_blank"
+                    class="btn btn-reserva-3">Reservar Agora</a>
+            </div>
+        </section>
+        <section class="container-galeria">
+            <!-- Galeria title  -->
+            <div class="galeria-title">
+                <h3>Galeria:</h3>
+            </div>
+            <!-- Galeria code  -->
+            <div class="filters" id="filters">
+                <button data-filter="*" class="filter-button">Todos</button>
+                <button data-filter=".filter-paisagem" class="filter-button">Paisagem
+                </button>
+                <button data-filter=".filter-interior" class="filter-button">Interior</button>
+                <button data-filter=".filter-estrutura" class="filter-button">Estrutura</button>
+            </div>
+            <div class="gallery" data-aos="fade-up" data-aos-delay="200">
+                <!-- FOTO 1 -->
+                <div class="filter filter-interior"  data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-1.jpg', 0)" src="./assets/img/chacara/interior-1.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 2 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-2.jpg', 1)" src="./assets/img/chacara/interior-2.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 3 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-3.jpg', 2)" src="./assets/img/chacara/interior-3.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 4 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-4.jpg', 3)" src="./assets/img/chacara/interior-4.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 5 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-5.jpg', 4)" src="./assets/img/chacara/interior-5.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 6 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-6.jpg', 5)" src="./assets/img/chacara/interior-6.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 7 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-7.jpg', 6)" src="./assets/img/chacara/interior-7.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 8 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-8.jpg', 7)" src="./assets/img/chacara/interior-8.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 9 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-9.jpg', 8)" src="./assets/img/chacara/interior-9.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 10 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-10.jpg', 9)" src="./assets/img/chacara/interior-10.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 11 -->
+                <div class="filter filter-interior" data-category="filter-interior">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/interior-11.jpg', 10)" src="./assets/img/chacara/interior-11.jpg">
+                    </div>
+                </div>
+
+                <!-- FOTO 12 -->
+                <div class="filter filter-estrutura" data-category="filter-estrutura">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/estrutura-1.jpg', 11)" src="./assets/img/chacara/estrutura-1.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 13 -->
+                <div class="filter filter-estrutura" data-category="filter-estrutura">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/estrutura-2.jpg', 12)" src="./assets/img/chacara/estrutura-2.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 14 -->
+                <div class="filter filter-estrutura" data-category="filter-estrutura">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/estrutura-3.jpg', 13)" src="./assets/img/chacara/estrutura-3.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 15 -->
+                <div class="filter filter-estrutura" data-category="filter-estrutura">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/estrutura-4.jpg', 14)" src="./assets/img/chacara/estrutura-4.jpg">
+                    </div>
+                </div>
+
+                <!-- FOTO 16 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-1.jpg', 15)" src="./assets/img/chacara/paisagem-1.jpg">
+                    </div>
+                </div>
+
+                <!-- FOTO 17 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-2.jpg', 16)" src="./assets/img/chacara/paisagem-2.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 18 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-3.jpg', 17)" src="./assets/img/chacara/paisagem-3.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 19 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-4.jpg', 18)" src="./assets/img/chacara/paisagem-4.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 20 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-5.jpg', 19)" src="./assets/img/chacara/paisagem-5.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 21 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-6.jpg', 20)" src="./assets/img/chacara/paisagem-6.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 22 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-7.jpg', 21)" src="./assets/img/chacara/paisagem-7.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 23 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-8.jpg', 22)" src="./assets/img/chacara/paisagem-8.jpeg">
+                    </div>
+                </div>
+                <!-- FOTO 24 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-9.jpg', 23)" src="./assets/img/chacara/paisagem-9.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 25 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-10.jpg', 24)" src="./assets/img/chacara/paisagem-10.png">
+                    </div>
+                </div>
+                <!-- FOTO 26 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-11.jpg', 25)" src="./assets/img/chacara/paisagem-11.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 27 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-12.jpg', 26)" src="./assets/img/chacara/paisagem-12.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 28 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-13.jpg', 27)" src="./assets/img/chacara/paisagem-13.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 29 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-14.jpg', 28)" src="./assets/img/chacara/paisagem-14.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 30 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-15.jpg', 29)" src="./assets/img/chacara/paisagem-15.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 31 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-16.jpg', 30)" src="./assets/img/chacara/paisagem-16.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 32 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-17.jpg', 31)" src="./assets/img/chacara/paisagem-17.jpg">
+                    </div>
+                </div>
+                <!-- FOTO 33 -->
+                <div class="filter filter-paisagem" data-category="filter-paisagem">
+                    <div class="galeria-img">
+                        <img class="gallery-image" onclick="openModal('./assets/img/chacara/paisagem-18.jpg', 32)" src="./assets/img/chacara/paisagem-18.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <br>
+            <img src="./assets/img/canis-svg-deitado-transparente/3.svg">
+            <p>Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor Lorem Ipsum Sit Dolor</p>
+        </footer>
+    </main>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- light box -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- main js -->
+    <script src="./assets/javascript/main.js"></script>
+</body>
+
+</html>
