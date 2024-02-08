@@ -1,0 +1,15 @@
+Fonte: DM Sans
+--> Link: https://www.dafontfree.io/dm-sans-font/
+
+Cores:
+-- Verde claro: #3DB7A2
+-- Verde escuro: #34A0A3
+-- Verde button contato: #2D8F92
+-- Verde escuro icon: #1E7073
+-- Azul: #1A759F
+-- Bege/dourado: #D2B360
+-- Preto: #000000
+-- Branco: #FFFFFF
+-- Cinza escuro: #525252
+-- Cinza claro: #F8F8F8
+-- Cinza médio: #DCDCDC
