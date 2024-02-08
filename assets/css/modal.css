@@ -83,6 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 600px;
 }
 
 #qrcode-modal .modal-content img {
