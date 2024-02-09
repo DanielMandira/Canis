@@ -242,11 +242,10 @@
   }
 
   .beneficios img {
-    width: 100%;
-    height: 100%;
     max-width: 40px;
     max-height: 40px;
-
+    min-width: 20px;
+    min-height: auto;
   }
 
   .beneficios-1,
@@ -279,6 +278,8 @@
     font-weight: 500;
     line-height: 125%;
     padding-top: 2%;
+    text-align: left;
+    padding-left: 4%;
   }
 
   .contatos {
@@ -291,8 +292,8 @@
   }
 
   .contatos img {
-    max-width:283px;
-    max-height:283px;
+    max-width: 283px;
+    max-height: 283px;
     width: 100%;
     height: 100%;
   }
@@ -314,26 +315,29 @@
     font-weight: 500;
     padding: 0px 30px;
     line-height: 125%;
+    margin: 0px 40px;
   }
-  .whatsapp{
+
+  .whatsapp {
     min-width: 250px;
     max-width: 366px;
     display: flex;
     justify-content: start;
-    align-items:end;
+    align-items: end;
     background-color: #fff;
     margin: 5px 40px;
     padding: 10px 30px;
     border-radius: 10px;
     transition: 400ms;
   }
-  .whatsapp:hover{
+
+  .whatsapp:hover {
     min-width: 250px;
     max-width: 366px;
     cursor: pointer;
     display: flex;
     justify-content: start;
-    align-items:end;
+    align-items: end;
     background-color: #fff;
     margin: 5px 40px;
     padding: 10px 30px;
@@ -342,7 +346,8 @@
     opacity: 75%;
     transition: 400ms;
   }
-  .whatsapp-logo{
+
+  .whatsapp-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,11 +358,13 @@
     border-radius: 100%;
     margin-block: 2%;
   }
-  .whatsapp img{
+
+  .whatsapp img {
     width: 30px;
     height: 30px;
   }
-  .whatsapp p{
+
+  .whatsapp p {
     color: var(--secondaryColor);
     font-family: DMSansRegular;
     font-size: 1.5em;
@@ -365,24 +372,26 @@
     text-align: start;
     line-height: 125%;
   }
-  .contacts{
+
+  .contacts {
     min-width: 250px;
     max-width: 366px;
     display: flex;
     justify-content: start;
-    align-items:end;
+    align-items: end;
     background-color: var(--btnContato);
     margin: 5px 40px;
     padding: 10px 30px;
     border-radius: 10px;
     transition: 400ms;
   }
-  .contacts:hover{
+
+  .contacts:hover {
     min-width: 250px;
     max-width: 366px;
     display: flex;
     justify-content: start;
-    align-items:end;
+    align-items: end;
     text-align: start;
     cursor: pointer;
     background-color: var(--btnContato);
@@ -393,7 +402,8 @@
     opacity: 75%;
     transition: 400ms;
   }
-  .contacts-logo{
+
+  .contacts-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,19 +414,21 @@
     border-radius: 100%;
     margin-block: 2%;
   }
-  .contacts img{
+
+  .contacts img {
     width: 30px;
     height: 30px;
   }
-  .contacts p{
+
+  .contacts p {
     color: var(--fontColor);
     font-family: DMSansRegular;
     font-size: 1.25em;
     font-weight: 500;
     line-height: 125%;
   }
-  
-  .social p{
+
+  .social p {
     font-family: DMSansRegular;
     font-size: 1em;
     font-weight: 500;
@@ -424,13 +436,15 @@
     text-align: start;
     color: var(--fontColor);
   }
-  .container-logo{
+
+  .container-logo {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  .social-logo{
+
+  .social-logo {
     display: flex;
     background-color: var(--primaryColor);
     width: 82px;
@@ -442,7 +456,8 @@
     justify-content: center;
     transition: 400ms;
   }
-  .social-logo:hover{
+
+  .social-logo:hover {
     display: flex;
     background-color: var(--primaryColor);
     width: 82px;
@@ -457,11 +472,12 @@
     opacity: 75%;
     transition: 400ms;
   }
-  .social-logo img{
+
+  .social-logo img {
     width: 50px;
     height: 50px;
   }
-  
+
   .social {
     display: flex;
     flex-direction: column;
@@ -469,6 +485,7 @@
     align-items: center;
     width: 100%;
   }
+
   footer {
     padding: 15px 30px;
     display: flex;
@@ -515,10 +532,6 @@
     padding-bottom: 10%;
   }
 
-  .navbar {
-    padding-inline: 20%;
-  }
-
   .frase {
     font-family: DMSansRegular;
     color: var(--fontColor);
@@ -549,8 +562,6 @@
     justify-content: center;
     padding-top: 2em;
     background-color: var(--backgroundDesktopClaro);
-    padding-bottom: 3em;
-
   }
 
   .text-entrada h2 {
@@ -615,9 +626,11 @@
 
   .card-img-top {
     border-radius: 20px;
+    width: 900px;
+    height: 400px;
     max-width: 100%;
     max-height: 700px;
-
+    object-fit: cover;
   }
 
   .card-img-top-2 {
@@ -739,15 +752,6 @@
     transition: 400ms;
   }
 
-  .container-beneficios {
-    padding-block: 2%;
-    padding-inline: 4%;
-    display: flex;
-    flex-direction: row;
-    background-color: var(--backgroundMobileClaro);
-    padding-bottom: 100px;
-  }
-
   .container-image {
     display: flex;
     flex-wrap: calc(10vw, 100%);
@@ -814,6 +818,15 @@
     height: 70px;
 
   }
+
+  .beneficios-1 p,
+  .beneficios-2 p,
+  .beneficios-3 p,
+  .beneficios-4 p {
+    text-align: left;
+    padding-left: 4%;
+  }
+
 
   .beneficios-1 {
     display: flex;
@@ -940,6 +953,7 @@
     padding: 10px 30px;
     border-radius: 10px;
     transition: 400ms;
+    margin-top: 30px;
   }
 
   .whatsapp:hover {
@@ -1031,42 +1045,48 @@
   .contacts p {
     color: var(--fontColor);
     font-family: DMSansRegular;
-    font-size: 1.875em;;
+    font-size: 1.875em;
+    ;
     font-weight: 500;
     text-wrap: nowrap;
     line-height: 125%;
   }
-.social{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   .social p {
     font-family: DMSansRegular;
-    font-size: 1.5625em;;
+    font-size: 1.5625em;
+    ;
     font-weight: 500;
     line-height: 125%;
     text-wrap: nowrap;
     color: var(--fontColor);
   }
-  .container-logo{
+
+  .container-logo {
     display: flex;
     flex-direction: row;
     flex-shrink: 0;
     align-items: center;
   }
+
   .logo-back img {
-   width: 62px;
-  height: 62px;
+    width: 50px;
+    height: 50px;
   }
-  .logo-back{
+
+  .logo-back {
     background-color: var(--primaryColor);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    padding: 15px;
     border-radius: 100%;
     transition: 400ms;
   }
@@ -1084,12 +1104,7 @@
     opacity: 75%;
     transition: 400ms;
   }
-  .logo-canis img {
-    width: 100%;
-    height: 100%;
-    max-width: 823px;
-    max-height: 823px;
-  }
+
   footer {
     padding: 15px 30px;
     display: flex;
@@ -1112,4 +1127,70 @@
     text-align: center;
     color: var(--secondaryFontColor);
   }
+}
+
+
+
+
+
+
+
+
+
+
+/* Logo Canis Media - show */
+@media (min-width: 1400px) {
+  .logo-canis img {
+    width: 100%;
+    height: 100%;
+    max-width: 823px;
+    max-height: 823px;
+    display: block;
+  }
+
+}
+
+/* Logo Canis Media - hide */
+@media (max-width: 1399px) and (min-width: 768px) {
+  .logo-canis img {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  .container-beneficios {
+    padding-block: 2%;
+    padding-inline: 4%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--backgroundMobileClaro);
+    padding-bottom: 100px;
+  }
+
+  
+  .navbar {
+    padding-inline: 20%;
+  }
+
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .container-beneficios {
+    padding-inline: 15%;
+    padding-bottom: 100px;
+  }
+
+  
+  .navbar {
+    padding-inline: 6%;
+  }
+
 }
