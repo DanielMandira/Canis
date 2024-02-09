@@ -125,6 +125,7 @@
     font-family: DMSansRegular;
     font-weight: 500;
     line-height: 125%;
+    color: var(--secondaryFontColor);
   }
 
   .container-reserva {

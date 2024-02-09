@@ -114,7 +114,7 @@
   font-weight: 500;
   background-color:transparent;
   transition: 400ms;
-
+  color: var(--secondaryFontColor);
 }
 .filter-button.active:hover {
   background-color: var(--secondaryColor);
