@@ -25,6 +25,7 @@
   margin: 30px;
   position: relative;
   z-index: 12;
+  max-width: 500px;
 }
 
 .modal-content .close {

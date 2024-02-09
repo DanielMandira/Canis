@@ -546,6 +546,11 @@
     line-height: 125%;
   }
 
+  .custom-nav-link:hover {
+    color: var(--primaryColor);
+    font-weight: 800;
+  }
+
   .custom-nav-link-active {
     color: var(--fontColor);
     text-decoration: underline;
@@ -560,7 +565,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    padding-top: 2em;
+    padding-top: 6em;
     background-color: var(--backgroundDesktopClaro);
   }
 
@@ -1096,8 +1101,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    padding: 20px;
     border-radius: 100%;
     cursor: pointer;
     transform: scale(98%);
