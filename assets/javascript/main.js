@@ -10,7 +10,7 @@ function includeHTML(file, elementId) {
     xhttp.send();
 }
 
-includeHTML('../../views/cardStudio.html', 'cardStudio');
+includeHTML('views/cardStudio.html', 'cardStudio');
 includeHTML('../../views/cardChacara.html', 'cardChacara');
 includeHTML('../../views/contatosDesktop.html', 'contatosDesktop');
 includeHTML('../../views/descChacaraDesktop.html', 'container-descricao-chacara');
